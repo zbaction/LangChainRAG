@@ -19,7 +19,7 @@ history_data = [
 model = ChatTongyi(model="qwen3-max")
 
 # 组成链，要求每一个组件都是Runnable接口的子类
-chain = chat_prompt_template | model
+chain = chat_prompt_template |                      model
 
 # 通过链去调用invoke或stream
 # res = chain.invoke({"history": history_data})
