@@ -19,8 +19,6 @@ prompt = ChatPromptTemplate.from_messages(
 )
 str_parser = StrOutputParser()
 
-
-
 def print_prompt(full_prompt):
     print("="*20,full_prompt.to_string(), "="*20)
     return full_prompt
