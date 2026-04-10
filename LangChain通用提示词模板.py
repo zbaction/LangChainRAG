@@ -1,8 +1,7 @@
-from langchain_classic.smith.evaluation.name_generation import adjectives
+
 from langchain_core.prompts import PromptTemplate
 from langchain_community.llms.tongyi import Tongyi
 
-from LangChainRAG.LangChain访问阿里云通义千问模型 import model
 
 prompt_template = PromptTemplate.from_template(
     "我的邻居是一个{adjectives}的人，他总是{behavior}。我觉得他很{feeling}。"
