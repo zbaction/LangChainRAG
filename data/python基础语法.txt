@@ -1,0 +1,121 @@
+Python基础语法
+
+一、变量与数据类型
+Python是动态类型语言，不需要显式声明变量类型。
+
+示例：
+a = 10        # 整型
+b = 3.14      # 浮点型
+c = "hello"   # 字符串
+d = True      # 布尔型
+
+常见数据类型：
+- int（整数）
+- float（浮点数）
+- str（字符串）
+- bool（布尔）
+- list（列表）
+- tuple（元组）
+- dict（字典）
+- set（集合）
+
+----------------------------------------
+
+二、输入与输出
+
+输入：
+name = input("请输入姓名：")
+
+输出：
+print("Hello,", name)
+
+----------------------------------------
+
+三、条件语句
+
+if 条件:
+    执行代码
+elif 条件:
+    执行代码
+else:
+    执行代码
+
+示例：
+age = 18
+if age >= 18:
+    print("成年人")
+else:
+    print("未成年")
+
+----------------------------------------
+
+四、循环语句
+
+1. for循环：
+for i in range(5):
+    print(i)
+
+2. while循环：
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+----------------------------------------
+
+五、函数
+
+定义函数：
+def add(a, b):
+    return a + b
+
+调用函数：
+result = add(3, 5)
+print(result)
+
+----------------------------------------
+
+六、列表操作
+
+list1 = [1, 2, 3]
+list1.append(4)
+list1.remove(2)
+
+for item in list1:
+    print(item)
+
+----------------------------------------
+
+七、字典操作
+
+dict1 = {"name": "Tom", "age": 18}
+print(dict1["name"])
+
+dict1["age"] = 20
+
+for key, value in dict1.items():
+    print(key, value)
+
+----------------------------------------
+
+八、文件操作
+
+写文件：
+with open("test.txt", "w", encoding="utf-8") as f:
+    f.write("Hello Python")
+
+读文件：
+with open("test.txt", "r", encoding="utf-8") as f:
+    content = f.read()
+    print(content)
+
+----------------------------------------
+
+九、异常处理
+
+try:
+    x = int(input("输入一个数字："))
+except ValueError:
+    print("输入错误")
+finally:
+    print("程序结束")
